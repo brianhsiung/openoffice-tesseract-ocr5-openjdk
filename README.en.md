@@ -1,36 +1,22 @@
 # openoffice-tesseract-ocr5-openjdk
 
-#### Description
+#### 介绍
 openoffice-tesseract-ocr5-openjdk:8-jre-bullseye
 
-#### Software Architecture
-Software architecture description
+1. 下载
+https://www.openoffice.org/zh-cn/download/
 
-#### Installation
+![image-20220710124307033](https://brianhsiung.oss-cn-hangzhou.aliyuncs.com/img/image-20220710124307033.png)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+https://notesalexp.org/tesseract-ocr/packages5/en/debian/bullseye/amd64/
 
-#### Instructions
+下载：tesseract-ocr libtesseract5 tesseract-ocr-osd tesseract-ocr-eng tesseract-ocr-chi-sim 
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+2. 构建
 
-#### Contribution
-
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
-
-
-#### Gitee Feature
-
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+```shell
+image_name='openoffice-tesseract-ocr5-openjdk:8-jre-bullseye'
+docker build -t  $image_name .
+docker tag $image_name ccr.ccs.tencentyun.com/brian/$image_name
+docker push ccr.ccs.tencentyun.com/brian/$image_name
+```
