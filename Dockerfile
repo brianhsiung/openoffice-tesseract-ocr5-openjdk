@@ -53,7 +53,7 @@ RUN set -eux; \
     #wget -P /tmp "https://notesalexp.org/tesseract-ocr5/$(lsb_release -cs)/pool/main/t/tesseract/tesseract-ocr_5.1.0-1_$dpkgArch.deb"; \
     #wget -P /tmp "https://notesalexp.org/tesseract-ocr5/$(lsb_release -cs)/pool/main/t/tesseract-lang/tesseract-ocr-osd_5.0.0~git39-6572757-2_all.deb"; \
     #wget -P /tmp "https://notesalexp.org/tesseract-ocr5/$(lsb_release -cs)/pool/main/t/tesseract-lang/tesseract-ocr-eng_5.0.0~git39-6572757-2_all.deb"; \
-    #wget -P /tmp "https://notesalexp.org/tesseract-ocr5/$(lsb_release -cs)/pool/main/t/tesseract-lang/tesseract-ocr-chi-sim_5.0.0~git39-6572757-2_all.deb; \"
+    #wget -P /tmp "https://notesalexp.org/tesseract-ocr5/$(lsb_release -cs)/pool/main/t/tesseract-lang/tesseract-ocr-chi-sim_5.0.0~git39-6572757-2_all.deb"; \
     apt-get install -y --no-install-recommends \
         libarchive13 \
         libharfbuzz0b \
